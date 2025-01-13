@@ -1,0 +1,59 @@
+
+########## SIGLE-NODE SERVER (ON DOCKER) ##########
+
+List all topics:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+Create a topic:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic topic-test
+
+Create a producer:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topic-test
+
+Create a consumer:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic-test --from-beginning
+
+
+
+########## CLUSTER (ON DOCKER) ##########
+
+Create a topic:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092,localhost:9093 --replication-factor 2 --partitions 2 --topic topic-test
+
+Create a producer:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092,localhost:9093 --topic topic-test
+
+Create a consumer:
+----------------
+docker exec -it movie-streaming-kafka-broker-1-1/opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092,localhost:9093 --topic topic-test --from-beginning
+
+
+
+########## CHECK NODE NUMBER (ON DOCKER) ##########
+
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/zookeeper-shell.sh zookeeper:2181 ls /brokers/ids
+
+
+
+########## CONSUMER COMMANDS ##########
+
+List All Consumer Groups:
+------------------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+
+Describe Consumer Group:
+------------------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group group-name
+
+Resetting Offsets:
+------------------
+docker exec -it movie-streaming-kafka-broker-1-1 /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group group-name --reset-offsets --to-latest/earliest --topic topic-name
+
+
+
