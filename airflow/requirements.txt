@@ -1,0 +1,14 @@
+requests
+psycopg2
+pandas
+polars
+xlrd>=2.0.1
+requests
+python-dotenv
+minio
+pydantic_settings
+pyarrow
+boto3
+PyYAML
+openpyxl
+tqdm
