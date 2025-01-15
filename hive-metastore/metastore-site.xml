@@ -38,7 +38,7 @@
     </property>
     <property>
         <name>fs.s3a.endpoint</name>
-        <value>http://minio:9000</value>
+        <value>http://160.191.244.13:9000</value>
     </property>
     <property>
         <name>fs.s3a.path.style.access</name>

@@ -53,7 +53,7 @@ services:
     environment:
       - JUPYTER_ENABLE_LAB="yes"
       - GRANT_SUDO="yes"
-      - MLFLOW_S3_ENDPOINT_URL=http://minio:9000/ 
+      - MLFLOW_S3_ENDPOINT_URL=http://160.191.244.13:9000
       - AWS_ACCESS_KEY_ID=minio
       - AWS_SECRET_ACCESS_KEY=minio123
     volumes:
