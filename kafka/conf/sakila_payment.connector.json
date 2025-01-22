@@ -1,0 +1,23 @@
+{
+    "name": "sakila-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "tasks.max": "1",
+        "database.hostname": "116.118.50.253",
+        "database.port": "5433",
+        "database.user": "admin",
+        "database.password": "admin",
+        "database.server.id": "184054",
+        "topic.prefix": "dbserver1",
+        "database.dbname": "sakila",
+        "schema.history.internal.kafka.bootstrap.servers": "broker:9092",
+        "schema.history.internal.kafka.topic": "schema-changes.sakila",
+        "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "key.converter.schemas.enable": "false",
+        "value.converter.schemas.enable": "false",
+        "decimal.handling.mode": "double",
+        "slot.name": "debezium_slot",
+        "plugin.name": "pgoutput"
+    }
+}
