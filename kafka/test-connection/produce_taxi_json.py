@@ -6,7 +6,7 @@ import os
 from json import dumps
 from time import sleep
 from datetime import datetime
-from KafkaComponent import Prod
+from utils.kafka_clients import Prod
 
 #set the env variable to an IP if not localhost
 KAFKA_ADDRESS=os.getenv('KAFKA_ADDRESS')

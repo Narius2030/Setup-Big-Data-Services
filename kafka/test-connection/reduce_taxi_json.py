@@ -6,7 +6,7 @@ import csv
 import json
 from pathlib import Path
 from dotenv import load_dotenv
-from KafkaComponent import Cons
+from utils.kafka_clients import Cons
 env_path = Path(".") / ".env"
 load_dotenv(dotenv_path=env_path)
 
