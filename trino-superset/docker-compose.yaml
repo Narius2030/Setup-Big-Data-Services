@@ -1,0 +1,27 @@
+
+version: '3.9'
+
+services:
+  superset:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: superset
+    environment:
+      - ADMIN_USERNAME=admin
+      - ADMIN_EMAIL=nhanbui15122003@gmail.com
+      - ADMIN_PASSWORD=admin
+    ports:
+      - '8088:8088'
+
+  trino:
+    image: trinodb/trino:latest
+    container_name: trino
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./trino-config:/etc/trino
+    depends_on:
+      - mongodb
+    environment:
+      JAVA_TOOL_OPTIONS: "-Duser.timezone=UTC"

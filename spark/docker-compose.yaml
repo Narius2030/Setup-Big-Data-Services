@@ -3,7 +3,7 @@ version: "3.9"
 services:
   spark-master:
     build:
-      context: ./spark
+      context: ./
       dockerfile: ./Dockerfile
     container_name: "spark-master"
     ports:
@@ -19,8 +19,8 @@ services:
       - SPARK_SSL_ENABLED=no
       - SPARK_USER=spark
     volumes:
-      - ./spark/conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
-      - ./spark/conf/log4j.properties:/opt/bitnami/spark/conf/log4j.properties
+      - ./conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+      - ./conf/log4j.properties:/opt/bitnami/spark/conf/log4j.properties
     networks:
       - data_network
 
@@ -28,7 +28,7 @@ services:
     image: docker.io/bitnami/spark:3.3.2
     container_name: "spark-worker-1"
     env_file:
-      - .env
+      - ../.env
     depends_on:
       - spark-master
     networks:
@@ -46,7 +46,7 @@ services:
   
   spark-notebook:
     build: 
-      context: ./notebook
+      context: ../spark-notebook
       dockerfile: ./Dockerfile
     container_name: "spark-notebook"
     user: root
@@ -57,8 +57,8 @@ services:
       - AWS_ACCESS_KEY_ID=minio
       - AWS_SECRET_ACCESS_KEY=minio123
     volumes:
-      - ./notebook/work:/home/nhanbui/work
-      - ./notebook/conf/spark-defaults.conf:/usr/local/spark/conf/spark-defaults.conf
+      - ../spark-notebook/work:/home/nhanbui/work
+      - ../spark-notebook/conf/spark-defaults.conf:/usr/local/spark/conf/spark-defaults.conf
     ports:
       - "8888:8888"
       - "4040:4040"
@@ -95,7 +95,7 @@ services:
 
   spark-thrift-server:
     build:
-      context: ./spark
+      context: ./
       dockerfile: ./Dockerfile
     container_name: "spark-thrift-server"
     restart: always
@@ -108,8 +108,8 @@ services:
     command: sh -c "
       sleep 10 && ./sbin/start-thriftserver.sh --driver-java-options '-Dhive.metastore.uris=thrift://hive-metastore:9083' --master spark://spark-master:7077 --executor-memory 1G --total-executor-cores 1 --driver-memory 1G"
     volumes:
-      - ./spark/conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
-      - ./spark/conf/hive-site.xml:/opt/bitnami/spark/conf/hive-site.xml
+      - ./conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+      - ./conf/hive-site.xml:/opt/bitnami/spark/conf/hive-site.xml
     networks:
       - data_network
 
