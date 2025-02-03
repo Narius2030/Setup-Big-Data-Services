@@ -1,20 +1,20 @@
 from pyspark.sql import SparkSession
 
-
 class SparkStreaming():
     @staticmethod
     def get_instance(app_name:str, executor_memory:str="1g", partitions:str="200"):
-        spark = SparkSession.builder \
-                            .appName(app_name) \
-                            .master('spark://spark-master:7077') \
-                            .config("spark.executor.memory", executor_memory) \
-                            .config("spark.sql.shuffle.partitions", partitions) \
-                            .config("hive.metastore.uris", "thrift://hive-metastore:9083") \
-                            .config('spark.hadoop.fs.s3a.aws.credentials.provider', 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider') \
-                            .config('spark.sql.warehouse.dir', f's3a://lakehouse/') \
-                            .config('spark.jars.packages', 'org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.0,org.mongodb.spark:mongo-spark-connector:10.0.2') \
-                            .enableHiveSupport() \
-                            .getOrCreate()                                
+        spark = (SparkSession.builder
+                    .appName(app_name)
+                    .master('spark://spark-master:7077')
+                    .config("spark.executor.memory", executor_memory)
+                    .config("spark.sql.shuffle.partitions", partitions)
+                    .config("hive.metastore.uris", "thrift://hive-metastore:9083")
+                    .config('spark.hadoop.fs.s3a.aws.credentials.provider', 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider')
+                    .config('spark.sql.warehouse.dir', 's3a://lakehouse/')
+                    .config('hive.metastore.warehouse.dir', 's3a://lakehouse/')
+                    .config('spark.jars.packages', 'org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.0,org.mongodb.spark:mongo-spark-connector:10.0.2')
+                    .enableHiveSupport()
+                    .getOrCreate())                
         return spark
     
     @staticmethod
@@ -46,7 +46,7 @@ class SparkStreaming():
         return read_stream
     
     @staticmethod
-    def create_file_write_stream(stream, storage_path, checkpoint_path, trigger="120 seconds", output_mode="append", file_format="parquet"):
+    def create_file_write_stream(stream, checkpoint_path, storage_path=None, trigger="5 seconds", output_mode="append", file_format="delta", partitions=None):
         """
         Write the stream back to a file store
 
@@ -54,7 +54,7 @@ class SparkStreaming():
             stream : DataStreamReader
                 The data stream reader for your stream
             file_format : str
-                parquet, csv, orc etc
+                mongodb, delta, parquet, csv etc
             storage_path : str
                 The file output path
             checkpoint_path : str
@@ -65,14 +65,13 @@ class SparkStreaming():
                 append, complete, update
         """
 
-        write_stream = (stream.writeStream
+        write_stream = (stream
+                            .writeStream
                             .format(file_format)
-                            .partitionBy("month", "day", "hour")
-                            .option("path", storage_path)
+                            .partitionBy(partitions)
                             .option("checkpointLocation", checkpoint_path)
+                            .option("path", storage_path)
                             .trigger(processingTime=trigger)
                             .outputMode(output_mode))
 
         return write_stream
-    
-    
