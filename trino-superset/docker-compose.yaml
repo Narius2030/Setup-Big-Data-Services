@@ -7,21 +7,26 @@ services:
       context: ./
       dockerfile: ./Dockerfile
     container_name: superset
-    environment:
-      - ADMIN_USERNAME=admin
-      - ADMIN_EMAIL=nhanbui15122003@gmail.com
-      - ADMIN_PASSWORD=admin
+    env_file:
+      - ../.env
     ports:
       - '8088:8088'
+    networks:
+      - data_network
 
   trino:
-    image: trinodb/trino:latest
+    image: trinodb/trino:400
     container_name: trino
     ports:
-      - "8082:8080"
+      - "8080:8080"
     volumes:
-      - ./trino-config:/etc/trino
-    depends_on:
-      - mongodb
+      - ./trino-conf:/etc/trino
     environment:
       JAVA_TOOL_OPTIONS: "-Duser.timezone=UTC"
+    networks:
+      - data_network
+
+networks:
+  data_network:
+    driver: bridge
+    name: data_network

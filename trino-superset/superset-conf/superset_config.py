@@ -1,0 +1,6 @@
+FEATURE_FLAGS = {
+    "ENABLE_TEMPLATE_PROCESSING": True,
+}
+
+ENABLE_PROXY_FIX = True
+SECRET_KEY = "7g!9@Lz#2pQv$8&sWx+Yk^5dFb*4hJn"
