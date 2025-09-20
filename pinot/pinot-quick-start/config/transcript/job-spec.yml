@@ -1,0 +1,33 @@
+executionFrameworkSpec:
+  name: 'standalone'
+  segmentGenerationJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentGenerationJobRunner'
+  segmentTarPushJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentTarPushJobRunner'
+  segmentUriPushJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentUriPushJobRunner'
+jobType: SegmentCreationAndTarPush
+inputDirURI: '/tmp/pinot-quick-start/config/transcript/input/'
+includeFileNamePattern: 'glob:**/*.csv'
+outputDirURI: 's3://pinot-storage/segments/transcript_v2'
+overwriteOutput: true
+pushJobSpec:
+  pushParallelism: 2
+  pushAttempts: 2
+  pushRetryIntervalMillis: 1000
+pinotFSSpecs:
+  - scheme: s3
+    className: org.apache.pinot.plugin.filesystem.S3PinotFS
+    configs:
+      region: us-east-1
+      accessKey: 'minio'
+      secretKey: 'minio123'
+      endpoint: 'http://36.50.135.226:9000'
+      pathStyleAccess: true  # Needed for MinIO
+recordReaderSpec:
+  dataFormat: 'csv'
+  className: 'org.apache.pinot.plugin.inputformat.csv.CSVRecordReader'
+  configClassName: 'org.apache.pinot.plugin.inputformat.csv.CSVRecordReaderConfig'
+tableSpec:
+  tableName: 'transcript_v2'
+  schemaURI: 'http://160.191.244.13:9000/tables/transcript_v2/schema'
+  tableConfigURI: 'http://160.191.244.13:9000/tables/transcript_v2'
+pinotClusterSpecs:
+  - controllerURI: 'http://160.191.244.13:9000'

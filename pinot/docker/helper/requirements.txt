@@ -1,0 +1,9 @@
+confluent-kafka
+Faker
+numpy
+pandas
+typer
+pyyaml
+requests
+pinotdb
+pulsar-client

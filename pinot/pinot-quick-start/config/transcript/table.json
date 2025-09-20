@@ -1,0 +1,25 @@
+{
+  "tableName": "transcript_v2",
+  "segmentsConfig" : {
+    "timeColumnName": "timestampInEpoch",
+    "timeType": "MILLISECONDS",
+    "replication" : "1",
+    "schemaName" : "transcript"
+  },
+  "tableIndexConfig" : {
+    "invertedIndexColumns" : [],
+    "loadMode"  : "MMAP"
+  },
+  "tenants" : {
+    "broker":"DefaultTenant",
+    "server":"DefaultTenant"
+  },
+  "ingestionConfig": {
+    "batchIngestionConfig": {
+      "segmentIngestionType": "APPEND",
+      "segmentIngestionFrequency": "DAILY"
+    }
+  },
+  "tableType":"OFFLINE",
+  "metadata": {}
+}

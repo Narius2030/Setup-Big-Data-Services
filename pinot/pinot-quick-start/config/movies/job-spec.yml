@@ -1,0 +1,27 @@
+executionFrameworkSpec:
+  name: 'standalone'
+  segmentGenerationJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentGenerationJobRunner'
+  segmentTarPushJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentTarPushJobRunner'
+segmentNameGeneratorSpec:
+  configs:
+    use.global.directory.sequence.id: true
+jobType: SegmentCreationAndTarPush
+inputDirURI: '/tmp/pinot-quick-start/config/movies/input/'
+includeFileNamePattern: 'glob:**/*.csv'
+outputDirURI: '/tmp/pinot-quick-start/segments/movies'
+pinotFSSpecs:
+  - scheme: file
+    className: org.apache.pinot.spi.filesystem.LocalPinotFS
+recordReaderSpec:
+  dataFormat: 'csv'
+  className: 'org.apache.pinot.plugin.inputformat.csv.CSVRecordReader'
+  configClassName: 'org.apache.pinot.plugin.inputformat.csv.CSVRecordReaderConfig'
+tableSpec:
+  tableName: 'movies'
+  schemaURI: 'http://160.191.244.13:9000/tables/movies/schema'
+  tableConfigURI: 'http://160.191.244.13:9000/tables/movies'
+pinotClusterSpecs:
+  - controllerURI: 'http://160.191.244.13:9000'
+pushJobSpec:
+  pushParallelism: 2
+  pushAttempts: 2

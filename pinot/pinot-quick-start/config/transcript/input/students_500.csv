@@ -1,0 +1,501 @@
+studentID,firstName,lastName,gender,subject,score,timestampInEpoch
+200,Logan,Martinez,Male,Computer Science,2.6,1750049974562
+201,Henry,Jones,Male,Biology,2.6,1651640374562
+201,Emily,Davis,Female,English,3.7,1645937974562
+201,Ava,Martinez,Female,Biology,3.6,1639889974562
+201,Emily,Wilson,Female,Chemistry,2.5,1621141174562
+202,Emma,Garcia,Female,Maths,3.3,1712293174562
+202,Amelia,Wilson,Female,History,4.0,1621141174562
+202,Emma,Johnson,Female,English,2.4,1737953974562
+202,Emily,Johnson,Female,History,2.0,1684645174562
+203,Emily,Johnson,Female,Geography,4.0,1714885174562
+203,Charlotte,Williams,Female,Physics,3.9,1617339574562
+203,Isabella,Miller,Female,Computer Science,2.2,1723179574562
+203,Emma,Martinez,Female,Maths,3.5,1610859574562
+204,Henry,Davis,Male,Physics,3.4,1697950774562
+205,Sophia,Wilson,Female,Geography,3.9,1597726774562
+205,Logan,Garcia,Male,History,3.4,1740459574562
+205,Emily,Smith,Female,Chemistry,3.5,1732942774562
+205,Ethan,Smith,Male,English,3.7,1612155574562
+206,Logan,Davis,Male,Maths,3.4,1731905974562
+207,Emily,Johnson,Female,History,3.2,1626670774562
+208,Isabella,Martinez,Female,Maths,2.4,1664513974562
+209,Amelia,Smith,Female,English,3.2,1672981174562
+209,Sophia,Williams,Female,English,3.5,1677301174562
+209,James,Wilson,Male,Chemistry,2.4,1631681974562
+209,Mason,Johnson,Male,Biology,3.8,1681361974562
+210,Nick,Miller,Male,Chemistry,3.7,1717131574562
+210,Olivia,Jones,Female,English,3.7,1745989174562
+210,Lucas,Martinez,Male,Maths,3.8,1613710774562
+210,Nick,Jones,Male,English,3.4,1632718774562
+211,Logan,Miller,Male,English,2.6,1730523574562
+212,Emily,Wilson,Female,Chemistry,4.0,1641099574562
+213,Noah,Garcia,Male,Chemistry,2.0,1752382774562
+214,Henry,Jones,Male,Physics,3.8,1656046774562
+214,Logan,Garcia,Male,Physics,3.8,1640581174562
+214,Noah,Brown,Male,Computer Science,3.4,1639112374562
+214,Bob,Smith,Male,Biology,2.8,1685163574562
+214,Emma,Jones,Female,History,3.2,1629867574562
+215,Charlotte,Johnson,Female,Geography,3.8,1612069174562
+216,Logan,Brown,Male,Maths,3.5,1686805174562
+217,Emily,Garcia,Female,Chemistry,2.9,1701925174562
+218,Nick,Williams,Male,Physics,4.0,1625720374562
+219,Bob,Martinez,Male,Maths,3.5,1735275574563
+219,Noah,Miller,Male,Chemistry,3.5,1632891574563
+219,Olivia,Martinez,Female,English,2.3,1748235574563
+219,Ava,Garcia,Female,Biology,3.2,1637557174563
+219,Logan,Miller,Male,History,3.6,1700629174563
+219,Charlotte,Wilson,Female,English,2.1,1680411574563
+220,Noah,Garcia,Male,History,3.7,1638421174563
+221,Henry,Martinez,Male,Geography,3.1,1657947574563
+221,Emma,Williams,Female,Biology,3.0,1673067574563
+222,Emily,Martinez,Female,Physics,3.2,1723179574563
+223,Isabella,Garcia,Female,Geography,3.6,1676609974563
+223,Liam,Martinez,Male,Physics,2.9,1738472374563
+224,Emma,Jones,Female,History,3.8,1692853174563
+224,Amelia,Williams,Female,Biology,3.1,1647320374563
+225,Noah,Miller,Male,History,2.4,1603342774563
+225,Lucy,Davis,Female,Physics,2.4,1660971574563
+225,Henry,Smith,Male,Geography,3.4,1603688374563
+226,James,Davis,Male,Physics,3.1,1742101174563
+227,Henry,Brown,Male,Maths,2.6,1680757174563
+227,Liam,Williams,Male,English,3.5,1610686774563
+227,James,Johnson,Male,Maths,2.4,1739422774563
+228,Isabella,Jones,Female,History,2.3,1663563574563
+228,Liam,Garcia,Male,History,3.1,1726462774563
+229,Liam,Davis,Male,English,2.1,1690779574563
+229,Logan,Williams,Male,Geography,3.5,1722833974563
+229,Henry,Garcia,Male,Geography,3.2,1682744374563
+229,Sophia,Garcia,Female,Biology,2.2,1746766774563
+230,Mason,Brown,Male,Geography,2.5,1613192374563
+230,Nick,Martinez,Male,Computer Science,3.6,1727413174563
+231,Nick,Smith,Male,Chemistry,3.5,1717995574563
+232,Emma,Brown,Female,Geography,2.2,1704689974563
+233,Mia,Johnson,Female,Chemistry,2.2,1719032374563
+233,Olivia,Miller,Female,Geography,2.0,1753592374563
+234,Amelia,Davis,Female,Geography,3.0,1704776374563
+234,Nick,Wilson,Male,Computer Science,2.3,1737435574563
+234,Amelia,Brown,Female,Chemistry,2.7,1722401974563
+234,Lucas,Davis,Male,Physics,2.4,1711515574563
+235,Emma,Miller,Female,Physics,2.6,1686805174563
+235,Lucas,Wilson,Male,Biology,2.9,1737176374563
+236,Mason,Brown,Male,Physics,3.5,1744865974563
+237,Sophia,Smith,Female,Physics,2.7,1735275574563
+238,Noah,Martinez,Male,History,2.7,1620622774563
+238,Olivia,Wilson,Female,Geography,3.0,1634792374563
+239,Amelia,Wilson,Female,Physics,3.1,1708923574563
+239,Noah,Smith,Male,English,3.0,1727672374563
+239,Emma,Smith,Female,Physics,2.1,1709873974563
+239,Mia,Brown,Female,Computer Science,4.0,1700888374563
+239,Logan,Miller,Male,English,3.3,1751950774563
+239,Charlotte,Jones,Female,Maths,3.3,1723957174563
+239,Emma,Miller,Female,History,2.3,1710910774563
+239,Mia,Williams,Female,Physics,3.8,1720414774563
+239,Isabella,Johnson,Female,History,3.4,1709009974563
+239,Bob,Garcia,Male,Computer Science,3.9,1682398774563
+239,Mia,Johnson,Female,Chemistry,2.3,1663909174563
+239,Emily,Garcia,Female,History,3.1,1618635574563
+240,Noah,Davis,Male,Biology,3.7,1739941174563
+240,Charlotte,Martinez,Female,Physics,3.7,1629781174563
+241,Sophia,Martinez,Female,Physics,2.7,1722401974563
+241,Lucas,Garcia,Male,Physics,3.1,1613624374563
+241,James,Johnson,Male,History,4.0,1713502774563
+242,Isabella,Wilson,Female,Chemistry,2.1,1630385974563
+242,Liam,Martinez,Male,Geography,3.0,1691470774563
+243,James,Martinez,Male,English,2.1,1742187574563
+244,Henry,Johnson,Male,History,2.2,1647579574563
+244,Charlotte,Smith,Female,Chemistry,3.0,1676523574563
+244,Noah,Jones,Male,Geography,2.6,1726462774563
+245,Ethan,Miller,Male,History,3.8,1747025974563
+245,Lucy,Miller,Female,Chemistry,2.3,1706417974563
+245,Lucy,Martinez,Female,Computer Science,3.6,1651726774563
+245,Bob,Garcia,Male,English,2.5,1634101174563
+245,Noah,Johnson,Male,Chemistry,3.7,1608008374563
+245,Mia,Martinez,Female,Computer Science,4.0,1638421174563
+245,Isabella,Garcia,Female,History,3.0,1710737974563
+246,Bob,Wilson,Male,Biology,2.6,1751950774563
+247,Ava,Brown,Female,Maths,3.6,1720673974563
+247,Liam,Smith,Male,Maths,2.6,1658293174563
+248,Noah,Martinez,Male,Computer Science,2.8,1649307574563
+249,Charlotte,Smith,Female,Chemistry,3.8,1707454774563
+249,Nick,Martinez,Male,Maths,3.5,1707541174563
+250,James,Davis,Male,English,3.1,1682139574563
+251,Emma,Jones,Female,Chemistry,3.3,1651726774563
+251,Henry,Jones,Male,English,4.0,1668315574563
+251,Lucas,Johnson,Male,Physics,3.1,1657342774563
+251,James,Martinez,Male,Chemistry,2.4,1718168374563
+251,Olivia,Davis,Female,Geography,2.3,1658897974563
+252,Lucas,Jones,Male,Maths,2.5,1690347574563
+252,Liam,Smith,Male,Geography,3.7,1617080374563
+252,Lucas,Smith,Male,History,3.1,1683608374563
+252,Liam,Garcia,Male,Biology,4.0,1727672374563
+253,Ava,Smith,Female,Geography,3.8,1738040374563
+254,Mason,Garcia,Male,Geography,2.1,1672894774563
+255,Liam,Wilson,Male,English,3.3,1658206774563
+255,Amelia,Miller,Female,Biology,4.0,1674190774563
+256,Bob,Smith,Male,Chemistry,3.7,1621573174563
+257,Ethan,Brown,Male,Physics,3.8,1656910774563
+257,Mason,Wilson,Male,Biology,3.9,1714625974563
+258,Bob,Wilson,Male,Maths,2.5,1744174774563
+259,Mia,Miller,Female,Geography,2.7,1683176374563
+259,Nick,Davis,Male,English,2.4,1728968374563
+259,Olivia,Jones,Female,English,4.0,1647320374563
+260,Liam,Smith,Male,History,2.8,1740891574563
+261,Charlotte,Miller,Female,Physics,2.5,1690693174563
+262,Isabella,Brown,Female,Computer Science,3.8,1697086774563
+263,Bob,Williams,Male,English,2.4,1746680374563
+263,Mia,Smith,Female,English,2.6,1669438774563
+264,Mia,Williams,Female,Maths,3.4,1608267574563
+265,Lucas,Wilson,Male,Maths,2.6,1739336374563
+265,Henry,Williams,Male,Chemistry,2.0,1735275574563
+266,Henry,Miller,Male,English,2.1,1630472374563
+267,Lucy,Brown,Female,Maths,3.8,1717045174563
+267,Bob,Davis,Male,Computer Science,3.2,1628312374563
+268,Bob,Garcia,Male,Biology,3.8,1639976374563
+269,Emily,Brown,Female,Computer Science,3.9,1625633974563
+269,Olivia,Jones,Female,Computer Science,2.6,1678251574563
+270,Amelia,Williams,Female,Geography,3.0,1622177974563
+271,Henry,Williams,Male,Maths,3.0,1674709174563
+272,Henry,Miller,Male,Chemistry,3.7,1702184374563
+273,Noah,Wilson,Male,History,2.3,1659934774563
+273,Logan,Wilson,Male,Chemistry,2.3,1674622774563
+273,Olivia,Smith,Female,English,2.9,1631595574563
+274,Liam,Wilson,Male,History,3.4,1628053174563
+274,Liam,Wilson,Male,Computer Science,3.4,1692680374563
+275,Logan,Smith,Male,Computer Science,3.1,1605675574563
+275,Ethan,Jones,Male,Maths,2.9,1612414774563
+276,Isabella,Smith,Female,Maths,2.7,1742878774563
+277,Logan,Davis,Male,History,3.0,1667969974563
+277,Emily,Davis,Female,English,3.0,1641963574563
+277,Nick,Smith,Male,History,2.1,1652590774563
+278,James,Miller,Male,Computer Science,3.0,1716613174563
+279,Olivia,Garcia,Female,Chemistry,2.5,1674017974563
+280,Isabella,Jones,Female,Biology,2.9,1667710774563
+281,Bob,Miller,Male,Computer Science,3.1,1650689974563
+281,Mason,Davis,Male,Geography,2.7,1692507574563
+282,Mia,Williams,Female,Physics,2.3,1691989174563
+283,Lucas,Davis,Male,Physics,2.8,1701233974563
+284,Isabella,Miller,Female,Computer Science,4.0,1653627574563
+284,Sophia,Garcia,Female,Physics,3.6,1667192374563
+284,Mia,Brown,Female,Physics,2.1,1701320374563
+284,Lucas,Smith,Male,History,3.2,1611118774563
+284,Lucy,Martinez,Female,Geography,3.0,1713416374563
+285,Noah,Jones,Male,Maths,3.8,1599541174563
+286,Nick,Garcia,Male,Physics,2.6,1694581174563
+286,Ava,Brown,Female,History,3.7,1682398774563
+287,Mason,Smith,Male,Geography,2.7,1597985974563
+288,Logan,Johnson,Male,History,2.3,1682485174563
+289,Amelia,Jones,Female,Geography,3.5,1700629174563
+290,Bob,Brown,Male,Maths,3.3,1711515574563
+290,Ethan,Brown,Male,History,2.5,1652158774563
+290,Mia,Smith,Female,Biology,2.4,1724734774563
+290,Mia,Brown,Female,History,2.9,1705640374563
+290,Liam,Davis,Male,History,3.8,1660625974563
+290,Ethan,Smith,Male,English,2.0,1747630774563
+291,Henry,Williams,Male,History,2.3,1666846774563
+291,Lucas,Miller,Male,Computer Science,2.6,1623733174563
+291,Emma,Williams,Female,Maths,2.3,1748321974563
+292,Charlotte,Miller,Female,English,2.3,1678165174563
+293,Henry,Garcia,Male,Computer Science,2.7,1638939574563
+293,Bob,Brown,Male,Biology,3.1,1642654774563
+293,Ethan,Wilson,Male,Chemistry,3.8,1680152374563
+293,Ava,Brown,Female,Computer Science,2.7,1700369974563
+294,Emily,Wilson,Female,English,2.8,1670129974563
+295,Olivia,Wilson,Female,History,2.7,1646456374563
+295,Ethan,Garcia,Male,Geography,3.4,1686632374563
+295,Olivia,Wilson,Female,English,3.5,1719723574563
+295,Charlotte,Martinez,Female,Chemistry,2.4,1646715574563
+295,James,Wilson,Male,English,2.3,1669525174563
+295,Emily,Garcia,Female,English,2.5,1613797174563
+295,Henry,Miller,Male,Maths,4.0,1631768374563
+296,Lucy,Brown,Female,History,3.2,1656305974563
+296,Noah,Smith,Male,Maths,3.0,1677905974563
+297,Mason,Martinez,Male,Computer Science,2.6,1619758774563
+298,Lucy,Martinez,Female,Computer Science,3.9,1661749174563
+298,Charlotte,Wilson,Female,Biology,2.1,1624165174563
+298,Noah,Garcia,Male,Biology,2.8,1702011574563
+299,Ava,Johnson,Female,Geography,3.5,1613451574563
+299,Henry,Smith,Male,History,2.5,1665896374564
+299,Nick,Johnson,Male,Maths,3.0,1688965174564
+300,Nick,Wilson,Male,History,3.6,1674709174564
+301,Emily,Johnson,Female,History,3.7,1661749174564
+301,James,Martinez,Male,English,3.8,1742705974564
+301,Bob,Martinez,Male,History,2.4,1608699574564
+302,Bob,Smith,Male,History,3.1,1710305974564
+302,Amelia,Johnson,Female,Physics,3.2,1674449974564
+303,Olivia,Brown,Female,Computer Science,3.7,1669611574564
+304,Olivia,Miller,Female,Maths,3.1,1602305974564
+305,Ethan,Jones,Male,Physics,4.0,1619585974564
+305,Nick,Miller,Male,Chemistry,2.4,1613365174564
+306,Ethan,Williams,Male,History,2.6,1624251574564
+306,Sophia,Smith,Female,Maths,2.6,1722488374564
+306,Noah,Jones,Male,Geography,2.9,1731128374564
+306,Bob,Jones,Male,Maths,2.5,1722488374564
+307,Liam,Smith,Male,Biology,2.2,1622091574564
+307,Liam,Garcia,Male,Computer Science,3.5,1603342774564
+308,Mia,Garcia,Female,Computer Science,3.5,1685595574564
+308,James,Williams,Male,Computer Science,2.7,1718513974564
+309,Liam,Jones,Male,Computer Science,2.6,1694149174564
+310,Liam,Miller,Male,English,3.9,1640408374564
+310,Liam,Martinez,Male,Physics,2.0,1726376374564
+310,Amelia,Garcia,Female,Biology,3.2,1623041974564
+310,Emma,Wilson,Female,Physics,2.4,1660021174564
+311,Ava,Williams,Female,Maths,2.0,1665118774564
+311,Liam,Jones,Male,History,3.1,1617512374564
+311,Ethan,Garcia,Male,History,3.4,1733115574564
+312,Isabella,Smith,Female,English,3.1,1748149174564
+312,Lucas,Davis,Male,Physics,3.1,1690433974564
+312,James,Williams,Male,English,3.1,1660366774564
+313,Lucy,Davis,Female,Chemistry,3.7,1725166774564
+313,Olivia,Williams,Female,Biology,3.1,1743310774564
+314,Logan,Brown,Male,History,3.9,1613883574564
+314,Liam,Johnson,Male,Biology,2.9,1604897974564
+315,Emma,Williams,Female,Physics,3.6,1743051574564
+315,Amelia,Miller,Female,Maths,2.7,1611032374564
+315,Charlotte,Garcia,Female,Biology,2.6,1655787574564
+316,Mason,Wilson,Male,History,3.7,1625893174564
+317,Lucy,Johnson,Female,Physics,3.6,1680843574564
+317,Sophia,Johnson,Female,Biology,3.1,1683349174564
+317,Charlotte,Garcia,Female,Physics,3.4,1637989174564
+317,Mason,Johnson,Male,English,2.3,1705294774564
+318,Isabella,Davis,Female,Chemistry,3.8,1651294774564
+318,Ethan,Johnson,Male,Computer Science,2.9,1651208374564
+318,Amelia,Garcia,Female,Geography,2.2,1655873974564
+319,James,Davis,Male,Computer Science,3.5,1655960374564
+320,Ethan,Davis,Male,Computer Science,3.9,1713589174564
+321,Bob,Smith,Male,Biology,3.6,1730782774564
+321,Sophia,Miller,Female,Chemistry,3.8,1719118774564
+321,Henry,Wilson,Male,Physics,2.5,1733806774564
+322,Bob,Williams,Male,Computer Science,3.0,1722747574564
+323,James,Martinez,Male,Maths,3.3,1679374774564
+323,Lucy,Davis,Female,English,3.9,1700024374564
+324,Lucy,Wilson,Female,Maths,2.4,1684472374564
+324,Liam,Brown,Male,Geography,2.2,1724129974564
+324,Ava,Martinez,Female,Geography,3.1,1662526774564
+325,Sophia,Brown,Female,History,3.1,1612501174564
+325,James,Davis,Male,Computer Science,2.1,1666155574564
+325,Liam,Smith,Male,History,2.4,1673240374564
+325,Logan,Smith,Male,English,2.8,1657601974564
+325,Nick,Williams,Male,Chemistry,2.1,1745297974564
+326,Mia,Garcia,Female,English,2.1,1644814774564
+327,Olivia,Wilson,Female,Geography,3.7,1612846774564
+327,Mason,Garcia,Male,Geography,2.6,1598417974564
+327,Lucy,Garcia,Female,Physics,3.6,1739854774564
+327,James,Johnson,Male,Physics,2.1,1695185974564
+328,Noah,Davis,Male,Geography,2.9,1644641974564
+328,Nick,Brown,Male,Physics,2.9,1660107574564
+328,Emma,Brown,Female,Computer Science,3.6,1689569974564
+329,Ava,Brown,Female,Geography,2.9,1735361974564
+330,Noah,Brown,Male,Computer Science,2.1,1675573174564
+331,Isabella,Davis,Female,Physics,2.5,1634101174564
+332,Lucas,Brown,Male,Computer Science,3.5,1701925174564
+332,Olivia,Jones,Female,Physics,3.1,1669006774564
+332,Emily,Johnson,Female,Computer Science,3.1,1745038774564
+332,Ethan,Johnson,Male,Maths,2.3,1724907574564
+332,Emily,Johnson,Female,History,3.8,1643518774564
+332,Henry,Smith,Male,Chemistry,3.9,1749531574564
+332,Amelia,Brown,Female,Computer Science,3.2,1749617974564
+333,Noah,Miller,Male,History,3.5,1719032374564
+334,Noah,Garcia,Male,English,3.2,1737176374564
+334,Charlotte,Wilson,Female,Computer Science,3.6,1608872374564
+334,James,Johnson,Male,English,2.6,1681361974564
+335,Sophia,Johnson,Female,History,2.3,1726289974564
+336,Logan,Johnson,Male,Maths,2.3,1648529974564
+337,Lucas,Brown,Male,Physics,2.9,1606021174564
+337,Logan,Johnson,Male,Geography,3.5,1651985974564
+337,Liam,Williams,Male,Physics,2.9,1660712374564
+337,Lucas,Jones,Male,History,2.5,1753851574564
+338,Logan,Davis,Male,English,2.7,1708059574564
+338,Bob,Davis,Male,English,2.1,1714280374564
+338,Nick,Davis,Male,Maths,2.6,1714453174564
+338,Emma,Williams,Female,English,3.4,1684645174564
+338,Liam,Johnson,Male,Computer Science,3.7,1706158774564
+338,Lucas,Jones,Male,Computer Science,2.5,1742705974564
+339,Lucy,Wilson,Female,History,2.1,1639112374564
+339,Ava,Martinez,Female,History,3.6,1728363574564
+340,Emily,Miller,Female,Physics,3.0,1625461174564
+340,Sophia,Wilson,Female,Geography,3.4,1649480374564
+341,James,Williams,Male,English,2.8,1736917174564
+341,Bob,Wilson,Male,History,2.5,1715576374564
+342,Emily,Miller,Female,Computer Science,3.5,1730264374564
+343,Olivia,Smith,Female,Maths,2.3,1620622774564
+343,Amelia,Garcia,Female,Chemistry,2.9,1603256374564
+344,Charlotte,Brown,Female,Computer Science,3.3,1753333174564
+344,Lucy,Brown,Female,Physics,4.0,1671253174564
+344,Ava,Wilson,Female,Physics,3.3,1653886774564
+344,Ava,Wilson,Female,Maths,2.8,1651121974564
+344,Emily,Miller,Female,Geography,2.3,1738040374564
+344,Ethan,Williams,Male,Physics,2.3,1666069174564
+345,Olivia,Smith,Female,Maths,4.0,1703048374564
+345,Mason,Johnson,Male,Computer Science,3.1,1621141174564
+346,Mia,Brown,Female,History,2.3,1619845174564
+347,Bob,Brown,Male,Chemistry,2.9,1705208374564
+347,Emma,Jones,Female,Biology,4.0,1656997174564
+347,Liam,Johnson,Male,Computer Science,2.2,1652331574564
+347,Lucas,Miller,Male,English,2.8,1601528374564
+348,Emma,Miller,Female,Chemistry,2.8,1754197174564
+348,Logan,Martinez,Male,History,3.9,1659070774564
+348,Emily,Smith,Female,Physics,2.9,1629089974564
+348,Logan,Davis,Male,English,3.6,1726376374564
+348,Nick,Williams,Male,Computer Science,2.1,1606021174564
+348,Lucy,Johnson,Female,English,3.4,1667365174564
+349,Lucas,Brown,Male,History,3.6,1710305974564
+349,Isabella,Martinez,Female,Maths,2.5,1735793974564
+349,Mia,Smith,Female,Biology,3.5,1618635574564
+350,Noah,Jones,Male,Chemistry,3.8,1670129974564
+351,Charlotte,Smith,Female,History,2.1,1626929974564
+352,Noah,Jones,Male,Geography,2.5,1663909174564
+352,Sophia,Williams,Female,Physics,2.9,1714021174564
+352,Emma,Wilson,Female,History,2.7,1692507574564
+353,Ethan,Garcia,Male,Geography,2.8,1709960374564
+353,Nick,Miller,Male,English,3.6,1678424374564
+353,Lucas,Smith,Male,Physics,2.6,1695445174564
+353,Mia,Davis,Female,History,2.3,1679979574564
+353,Ava,Johnson,Female,Computer Science,2.6,1745384374564
+353,Ethan,Smith,Male,English,3.1,1747803574564
+353,Mia,Martinez,Female,Computer Science,3.2,1736139574564
+354,Mason,Garcia,Male,English,2.7,1675832374564
+354,Nick,Martinez,Male,Maths,2.9,1623473974564
+355,Emily,Wilson,Female,Biology,2.8,1631249974564
+356,Ethan,Williams,Male,Chemistry,3.1,1660107574564
+357,Mason,Martinez,Male,Maths,2.1,1630645174564
+358,Lucas,Martinez,Male,Physics,3.7,1709614774564
+358,Henry,Jones,Male,Maths,2.8,1622437174564
+359,Nick,Williams,Male,Computer Science,2.6,1698209974564
+359,Charlotte,Jones,Female,Biology,2.6,1627707574564
+359,Emma,Wilson,Female,Computer Science,2.1,1732856374564
+360,Lucas,Johnson,Male,Computer Science,3.7,1634187574564
+360,Sophia,Jones,Female,Geography,3.6,1690261174564
+361,Ethan,Martinez,Male,English,3.1,1733806774564
+362,Olivia,Brown,Female,Maths,2.1,1660885174564
+363,Bob,Wilson,Male,English,2.8,1650603574564
+363,Amelia,Williams,Female,History,2.2,1618462774564
+363,Ethan,Brown,Male,Computer Science,3.0,1730869174564
+363,Liam,Miller,Male,Geography,3.2,1690779574564
+363,Bob,Garcia,Male,Computer Science,2.2,1658897974564
+363,Henry,Wilson,Male,English,3.5,1729659574564
+364,Ethan,Martinez,Male,Maths,3.2,1631422774564
+365,Liam,Smith,Male,Biology,2.0,1615784374564
+365,Isabella,Williams,Female,English,2.6,1730091574564
+366,Nick,Miller,Male,History,2.2,1641531574564
+366,Emma,Wilson,Female,Maths,3.1,1704171574564
+366,Henry,Jones,Male,Biology,4.0,1743569974564
+367,James,Johnson,Male,Geography,3.2,1752123574564
+367,James,Smith,Male,Chemistry,2.5,1639544374564
+367,Olivia,Garcia,Female,Physics,2.4,1736312374564
+367,Emily,Davis,Female,Geography,3.8,1733547574564
+367,Lucas,Smith,Male,Geography,2.1,1693717174564
+368,Logan,Garcia,Male,History,2.6,1685854774564
+368,Logan,Wilson,Male,History,2.2,1638507574564
+368,Lucas,Johnson,Male,English,3.7,1601960374564
+368,Lucy,Smith,Female,Physics,3.1,1708664374564
+369,Logan,Johnson,Male,Geography,2.9,1600664374564
+370,Lucas,Jones,Male,History,2.8,1599022774564
+370,Henry,Davis,Male,Physics,3.6,1617512374564
+370,Isabella,Jones,Female,Computer Science,3.2,1614833974564
+370,Bob,Martinez,Male,Biology,3.4,1613019574564
+370,Amelia,Williams,Female,Maths,3.3,1630731574564
+370,Ava,Johnson,Female,Chemistry,2.1,1656651574564
+371,Logan,Smith,Male,Geography,3.6,1730437174564
+372,Henry,Wilson,Male,Physics,3.4,1686718774564
+372,Nick,Smith,Male,English,3.3,1728709174564
+372,Olivia,Williams,Female,Computer Science,3.7,1602910774564
+372,Charlotte,Williams,Female,Physics,3.3,1609649974565
+372,Olivia,Johnson,Female,History,3.8,1713934774565
+373,Charlotte,Martinez,Female,Physics,3.0,1650862774565
+373,Emma,Martinez,Female,Maths,3.6,1719377974565
+373,Emma,Davis,Female,English,3.6,1601441974565
+373,Henry,Jones,Male,English,2.3,1693630774565
+373,Olivia,Jones,Female,Computer Science,4.0,1722747574565
+373,Olivia,Brown,Female,Geography,2.1,1708577974565
+374,Isabella,Miller,Female,Geography,3.2,1739681974565
+374,Ava,Martinez,Female,Biology,2.1,1710824374565
+374,Mason,Brown,Male,English,3.8,1722315574565
+374,Bob,Smith,Male,Physics,2.3,1670907574565
+374,Lucy,Garcia,Female,Maths,2.4,1606539574565
+374,Mia,Johnson,Female,Maths,3.0,1661489974565
+374,Ethan,Smith,Male,Computer Science,3.5,1728190774565
+375,Noah,Martinez,Male,Chemistry,2.9,1679115574565
+375,Isabella,Garcia,Female,Geography,3.6,1663649974565
+375,Sophia,Smith,Female,Chemistry,2.3,1677214774565
+375,Sophia,Martinez,Female,Computer Science,3.4,1651640374565
+376,Ava,Johnson,Female,Maths,3.2,1613192374565
+376,Amelia,Davis,Female,Biology,2.0,1710651574565
+376,Sophia,Garcia,Female,Biology,2.0,1707368374565
+376,Emma,Brown,Female,Biology,3.6,1616129974565
+376,Charlotte,Martinez,Female,Computer Science,2.0,1716267574565
+376,Olivia,Williams,Female,History,2.8,1655528374565
+376,Ava,Johnson,Female,History,2.4,1685681974565
+377,Mason,Williams,Male,History,3.8,1611118774565
+377,Sophia,Johnson,Female,Physics,2.7,1738126774565
+377,Olivia,Wilson,Female,Computer Science,3.8,1699419574565
+378,Sophia,Garcia,Female,Chemistry,2.1,1697605174565
+379,Henry,Wilson,Male,Chemistry,3.3,1732251574565
+379,Lucy,Miller,Female,Physics,3.0,1702357174565
+379,Olivia,Jones,Female,Biology,2.3,1697000374565
+380,Ethan,Garcia,Male,Geography,3.7,1627880374565
+380,Isabella,Miller,Female,Chemistry,3.5,1674363574565
+381,Amelia,Martinez,Female,History,2.0,1700197174565
+381,Olivia,Johnson,Female,Computer Science,3.1,1689137974565
+381,Charlotte,Davis,Female,Maths,2.1,1678251574565
+381,Nick,Smith,Male,English,3.3,1725598774565
+381,Bob,Wilson,Male,Computer Science,3.8,1662094774565
+381,Bob,Wilson,Male,History,3.1,1690174774565
+381,Noah,Brown,Male,History,3.3,1659157174565
+382,Logan,Brown,Male,History,2.6,1699678774565
+382,Henry,Brown,Male,Chemistry,3.1,1628398774565
+382,Logan,Miller,Male,Maths,2.4,1691470774565
+383,Emily,Jones,Female,English,3.5,1663649974565
+383,Charlotte,Davis,Female,Biology,3.6,1668401974565
+383,Emily,Smith,Female,Physics,2.9,1629349174565
+384,Mason,Martinez,Male,Chemistry,2.2,1681016374565
+384,Amelia,Miller,Female,Maths,3.0,1704171574565
+384,Bob,Miller,Male,Geography,2.3,1728536374565
+385,Olivia,Martinez,Female,Physics,3.1,1645246774565
+385,Ethan,Johnson,Male,Biology,2.1,1755147574565
+386,Noah,Miller,Male,Chemistry,3.0,1727413174565
+386,Bob,Martinez,Male,Physics,2.5,1735534774565
+387,Bob,Davis,Male,Maths,3.8,1649653174565
+387,Charlotte,Garcia,Female,Geography,3.2,1625806774565
+387,Emma,Garcia,Female,Computer Science,3.4,1626670774565
+388,Nick,Davis,Male,Maths,2.9,1644814774565
+388,Sophia,Garcia,Female,Biology,3.5,1660798774565
+388,Sophia,Wilson,Female,Maths,3.4,1609995574565
+389,Nick,Brown,Male,Biology,2.2,1607317174565
+390,Amelia,Wilson,Female,Physics,3.1,1726117174565
+391,Isabella,Smith,Female,Maths,3.4,1627361974565
+391,Isabella,Davis,Female,Physics,2.4,1704257974565
+391,Olivia,Williams,Female,Biology,3.6,1713416374565
+391,Olivia,Davis,Female,English,3.0,1645333174565
+392,Mia,Johnson,Female,Maths,3.3,1731819574565
+392,Logan,Martinez,Male,Maths,3.2,1737521974565
+393,Mason,Martinez,Male,Geography,2.4,1598590774565
+394,Lucas,Martinez,Male,Chemistry,3.5,1691470774565
+395,Nick,Brown,Male,Geography,2.2,1646197174565
+396,Ethan,Jones,Male,Biology,3.3,1605934774565
+397,Bob,Davis,Male,Computer Science,2.7,1708837174565
+398,Mason,Smith,Male,English,3.3,1651294774565
+399,Sophia,Garcia,Female,Chemistry,3.6,1651553974565
+400,Amelia,Jones,Female,Geography,3.5,1607662774565
+401,Emily,Brown,Female,Biology,2.8,1652677174565
+402,Ethan,Davis,Male,Computer Science,3.1,1753592374565
+402,Ava,Williams,Female,Computer Science,2.5,1752814774565
+402,Logan,Johnson,Male,Geography,2.5,1663304374565
+402,Sophia,Miller,Female,English,3.6,1742705974565
+402,James,Johnson,Male,Physics,3.7,1640062774565
+402,Bob,Martinez,Male,Chemistry,2.1,1744693174565
+402,Mia,Johnson,Female,Computer Science,3.1,1722401974565
+402,Emily,Brown,Female,History,2.6,1639112374565
+402,Liam,Miller,Male,English,3.0,1634878774565
+403,Ethan,Wilson,Male,Biology,2.7,1719550774565
+404,Mason,Smith,Male,Geography,2.4,1720414774565
+405,Sophia,Davis,Female,Computer Science,2.2,1693371574565
+405,Lucas,Williams,Male,Biology,3.6,1731301174565
+406,Noah,Johnson,Male,Biology,2.8,1663563574565
+406,Mia,Wilson,Female,Geography,3.9,1623646774565
+406,Ava,Garcia,Female,Chemistry,2.1,1680411574565
+407,Liam,Wilson,Male,Computer Science,3.9,1617253174565
+407,Mia,Martinez,Female,Biology,3.5,1741496374565
+407,Charlotte,Miller,Female,English,3.4,1687150774565
+407,James,Johnson,Male,History,3.2,1715662774565
+408,Amelia,Miller,Female,History,4.0,1615697974565
